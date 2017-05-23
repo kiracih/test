@@ -1,5 +1,7 @@
 package firstTestNG;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -67,7 +69,7 @@ public class NewTest {
 				driver.close();
 			}
 
-			Assert.assertEquals(actualTitle, expectedTitle);
+			AssertJUnit.assertEquals(actualTitle, expectedTitle);
 
 		} else {
 
