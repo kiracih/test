@@ -1,17 +1,14 @@
 package firstTestNG;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class NewTest {
 
@@ -69,7 +66,7 @@ public class NewTest {
 				driver.close();
 			}
 
-			AssertJUnit.assertEquals(actualTitle, expectedTitle);
+			Assert.assertEquals(actualTitle, expectedTitle);
 
 		} else {
 
