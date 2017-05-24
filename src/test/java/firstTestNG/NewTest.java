@@ -70,7 +70,7 @@ public class NewTest {
 
 		/*} else {
 
-			
+			driver.close();
 
 		}*/
 
