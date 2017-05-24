@@ -1,10 +1,10 @@
 package firstTestNG;
 
 import org.testng.annotations.Test;
-import java.awt.Color;
+/*import java.awt.Color;
 import java.awt.Container;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;*/
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,15 +16,15 @@ public class NewTest {
 	String driverPath = "C:\\chromedriver.exe";
 	public WebDriver driver;
 
-	public static void infoBox(String infoMessage, String titleBar) {
+	/*public static void infoBox(String infoMessage, String titleBar) {
 		JOptionPane.showMessageDialog(null, infoMessage, titleBar,
 				JOptionPane.INFORMATION_MESSAGE);
-	}
+	}*/
 
 	@Test
 	public void verifyHomepageTitle() {
 
-		JFrame frame = new JFrame();
+		/*JFrame frame = new JFrame();
 		String[] options = new String[2];
 		options[0] = new String("Başlat");
 		options[1] = new String("Vazgeç");
@@ -34,9 +34,9 @@ public class NewTest {
 		int testStartResult = JOptionPane.showOptionDialog(frameContent,
 				"verifyHomepageTitle Testini Başlatmak İstiyor Musunuz?",
 				"verifyHomepageTitle Testi", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, options, null);
+				JOptionPane.INFORMATION_MESSAGE, null, options, null);*/
 
-		if (testStartResult == 0) {
+		//if (testStartResult == 0) {
 			System.out.println("Chrome açılıyor");
 			System.setProperty("webdriver.chrome.driver", driverPath);
 			driver = new ChromeDriver();
@@ -47,9 +47,9 @@ public class NewTest {
 
 			if (!actualTitle.equals(expectedTitle)) {
 
-				infoBox("verifyHomepageTitle Testi Başarısız\n\nGerçek: "
+				/*infoBox("verifyHomepageTitle Testi Başarısız\n\nGerçek: "
 						+ actualTitle + "\nBeklenen: " + expectedTitle,
-						"Başlık Hatalı");
+						"Başlık Hatalı");*/
 
 				System.out.println("Gerçek: " + actualTitle);
 				System.out.println("Beklenen: " + expectedTitle);
@@ -58,9 +58,9 @@ public class NewTest {
 
 			} else {
 
-				infoBox("verifyHomepageTitle Testi Başarılı\n\nGerçek: "
+				/*infoBox("verifyHomepageTitle Testi Başarılı\n\nGerçek: "
 						+ actualTitle + "\nBeklenen: " + expectedTitle,
-						"Başlık Doğru");
+						"Başlık Doğru");*/
 
 				System.out.println("Test Başarılı");
 				driver.close();
@@ -68,11 +68,11 @@ public class NewTest {
 
 			Assert.assertEquals(actualTitle, expectedTitle);
 
-		} else {
+		/*} else {
 
 			driver.close();
 
-		}
+		}*/
 
 	}
 }
