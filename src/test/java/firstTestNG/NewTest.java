@@ -43,7 +43,7 @@ public class NewTest {
 
 	}
 
-	/*@Test
+	@Test
 	public void login() {
 		
 		WebElement username = driver.findElement(By.id("user_login"));
@@ -64,7 +64,7 @@ public class NewTest {
 		Assert.assertEquals(actualTitle, expectedTitle);
 		
 
-	}*/
+	}
 	
 	@AfterTest
 	public void close(){
