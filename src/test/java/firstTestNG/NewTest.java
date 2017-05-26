@@ -1,78 +1,75 @@
 package firstTestNG;
 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 /*import java.awt.Color;
-import java.awt.Container;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;*/
+ import java.awt.Container;
+ import javax.swing.JFrame;
+ import javax.swing.JOptionPane;*/
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class NewTest {
 
-	public String baseUrl = "http://newtours.demoaut.com/";
+	
+
+
+	public String baseUrl = "http://demosite.center/wordpress/wp-login.php";
 	String driverPath = "C:\\chromedriver.exe";
 	public WebDriver driver;
 
-	/*public static void infoBox(String infoMessage, String titleBar) {
-		JOptionPane.showMessageDialog(null, infoMessage, titleBar,
-				JOptionPane.INFORMATION_MESSAGE);
-	}*/
+	@BeforeTest
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", driverPath);
+		driver = new ChromeDriver();
+		driver.get(baseUrl);
+	}
 
 	@Test
 	public void verifyHomepageTitle() {
 
-		/*JFrame frame = new JFrame();
-		String[] options = new String[2];
-		options[0] = new String("Başlat");
-		options[1] = new String("Vazgeç");
-		Container frameContent = frame.getContentPane();
-		frameContent.setBackground(Color.RED);
+		System.out.println("Chrome açılıyor");
 
-		int testStartResult = JOptionPane.showOptionDialog(frameContent,
-				"verifyHomepageTitle Testini Başlatmak İstiyor Musunuz?",
-				"verifyHomepageTitle Testi", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, options, null);*/
-
-		//if (testStartResult == 0) {
-			System.out.println("Chrome açılıyor");
-			System.setProperty("webdriver.chrome.driver", driverPath);
-			driver = new ChromeDriver();
-			driver.get(baseUrl);
-
-			String expectedTitle = "Welcome: Mercury Tours";
-			String actualTitle = driver.getTitle();
-
-			if (!actualTitle.equals(expectedTitle)) {
-
-				/*infoBox("verifyHomepageTitle Testi Başarısız\n\nGerçek: "
-						+ actualTitle + "\nBeklenen: " + expectedTitle,
-						"Başlık Hatalı");*/
-
-				System.out.println("Gerçek: " + actualTitle);
-				System.out.println("Beklenen: " + expectedTitle);
-
-				driver.close();
-
-			} else {
-
-				/*infoBox("verifyHomepageTitle Testi Başarılı\n\nGerçek: "
-						+ actualTitle + "\nBeklenen: " + expectedTitle,
-						"Başlık Doğru");*/
-
-				System.out.println("Test Başarılı");
-				driver.close();
-			}
-
-			Assert.assertEquals(actualTitle, expectedTitle);
-
-		/*} else {
-
-			
-
-		}*/
+		String expectedTitle1 = "WordPress Demo Install › Log In";
+		String actualTitle1 = driver.getTitle();
+		
+	
+		Assert.assertEquals(actualTitle1, expectedTitle1);
 
 	}
+
+	/*@Test
+	public void login() {
+		
+		WebElement username = driver.findElement(By.id("user_login"));
+		WebElement password = driver.findElement(By.id("user_pass"));
+		WebElement button = driver.findElement(By.id("wp-submit"));
+		
+		username.clear();
+		username.sendKeys("admin");
+
+		password.clear();
+		password.sendKeys("demo123");
+
+		button.submit();
+
+		String expectedTitle = "Dashboard ‹ WordPress Demo Install — WordPress";
+		String actualTitle = driver.getTitle();
+
+		Assert.assertEquals(actualTitle, expectedTitle);
+		
+
+	}*/
+	
+	@AfterTest
+	public void close(){
+		
+		driver.close();
+	}
+
 }

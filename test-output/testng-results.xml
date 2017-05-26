@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12723" started-at="2017-05-24T21:22:37Z" finished-at="2017-05-24T21:22:50Z">
+  <suite name="Default suite" duration-ms="9351" started-at="2017-05-26T18:02:08Z" finished-at="2017-05-26T18:02:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12723" started-at="2017-05-24T21:22:37Z" finished-at="2017-05-24T21:22:50Z">
+    <test name="Default test" duration-ms="9351" started-at="2017-05-26T18:02:08Z" finished-at="2017-05-26T18:02:18Z">
       <class name="firstTestNG.NewTest">
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.NewTest@72d818d1]" name="verifyHomepageTitle" duration-ms="12665" started-at="2017-05-25T00:22:37Z" finished-at="2017-05-25T00:22:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:firstTestNG.NewTest@5702b3b1]" name="setup" is-config="true" duration-ms="9179" started-at="2017-05-26T21:02:08Z" finished-at="2017-05-26T21:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.NewTest@5702b3b1]" name="verifyHomepageTitle" duration-ms="30" started-at="2017-05-26T21:02:18Z" finished-at="2017-05-26T21:02:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
+        <test-method status="PASS" signature="close()[pri:0, instance:firstTestNG.NewTest@5702b3b1]" name="close" is-config="true" duration-ms="93" started-at="2017-05-26T21:02:18Z" finished-at="2017-05-26T21:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
       </class> <!-- firstTestNG.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
