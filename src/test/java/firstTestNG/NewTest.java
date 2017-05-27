@@ -35,11 +35,11 @@ public class NewTest {
 
 		System.out.println("Chrome açılıyor");
 
-		String expectedTitle1 = "WordPress Demo Install › Log In";
-		String actualTitle1 = driver.getTitle();
+		String expectedTitle = "WordPress Demo Install › Log In";
+		String actualTitle = driver.getTitle();
 		
 	
-		Assert.assertEquals(actualTitle1, expectedTitle1);
+		Assert.assertEquals(actualTitle, expectedTitle);
 
 	}
 
