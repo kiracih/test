@@ -6,6 +6,7 @@
       <class name="firstTestNG.NewTest">
         <methods>
           <include name="close"/>
+          <include name="login"/>
           <include name="setup"/>
           <include name="verifyHomepageTitle"/>
         </methods>
