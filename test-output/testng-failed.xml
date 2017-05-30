@@ -5,10 +5,9 @@
     <classes>
       <class name="firstTestNG.NewTest">
         <methods>
+          <include name="logout"/>
           <include name="close"/>
-          <include name="login"/>
           <include name="setup"/>
-          <include name="verifyHomepageTitle"/>
         </methods>
       </class> <!-- firstTestNG.NewTest -->
     </classes>
