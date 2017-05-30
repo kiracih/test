@@ -31,7 +31,7 @@ public class NewTest {
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver(capabilities);
 		driver.get(baseUrl);
-		// driver.manage().window().maximize();
+		// driver.manage().window().maximize(); not applicable while in incognito mode
 	}
 
 	@Test(priority = 0)
@@ -80,6 +80,11 @@ public class NewTest {
 		WebDriverWait wait = new WebDriverWait(driver, 1);
 		WebElement logout = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='wp-admin-bar-logout']/a")));
 		logout.click();
+		
+		String expectedTitle = "WordPress Demo Install › Log In" ;
+		String actualTitle = driver.getTitle();
+		
+		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
 	@AfterTest

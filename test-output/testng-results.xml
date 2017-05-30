@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21745" started-at="2017-05-30T16:34:54Z" finished-at="2017-05-30T16:35:16Z">
+  <suite name="Default suite" duration-ms="22710" started-at="2017-05-30T16:49:12Z" finished-at="2017-05-30T16:49:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21745" started-at="2017-05-30T16:34:54Z" finished-at="2017-05-30T16:35:16Z">
+    <test name="Default test" duration-ms="22710" started-at="2017-05-30T16:49:12Z" finished-at="2017-05-30T16:49:34Z">
       <class name="firstTestNG.NewTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="setup" is-config="true" duration-ms="9167" started-at="2017-05-30T19:34:54Z" finished-at="2017-05-30T19:35:03Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="setup" is-config="true" duration-ms="10199" started-at="2017-05-30T19:49:12Z" finished-at="2017-05-30T19:49:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="verifyHomepageTitle" duration-ms="31" started-at="2017-05-30T19:35:03Z" finished-at="2017-05-30T19:35:03Z">
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="verifyHomepageTitle" duration-ms="31" started-at="2017-05-30T19:49:22Z" finished-at="2017-05-30T19:49:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
-        <test-method status="PASS" signature="login()[pri:1, instance:firstTestNG.NewTest@4b952a2d]" name="login" duration-ms="11041" started-at="2017-05-30T19:35:03Z" finished-at="2017-05-30T19:35:14Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:firstTestNG.NewTest@4b952a2d]" name="login" duration-ms="10407" started-at="2017-05-30T19:49:22Z" finished-at="2017-05-30T19:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logout()[pri:2, instance:firstTestNG.NewTest@4b952a2d]" name="logout" duration-ms="1304" started-at="2017-05-30T19:35:14Z" finished-at="2017-05-30T19:35:16Z">
+        <test-method status="PASS" signature="logout()[pri:2, instance:firstTestNG.NewTest@4b952a2d]" name="logout" duration-ms="1886" started-at="2017-05-30T19:49:32Z" finished-at="2017-05-30T19:49:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="close" is-config="true" duration-ms="147" started-at="2017-05-30T19:35:16Z" finished-at="2017-05-30T19:35:16Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="close" is-config="true" duration-ms="133" started-at="2017-05-30T19:49:34Z" finished-at="2017-05-30T19:49:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
