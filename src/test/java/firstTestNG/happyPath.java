@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class NewTest {
+public class happyPath {
 
 	public String baseUrl = "http://demosite.center/wordpress/wp-login.php";
 	String driverPath = "C:\\chromedriver.exe";
