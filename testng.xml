@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="firstTestNG.happyPath"/>
+      <class name="firstTestNG.saveDraft"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

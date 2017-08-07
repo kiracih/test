@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22710" started-at="2017-05-30T16:49:12Z" finished-at="2017-05-30T16:49:34Z">
+  <suite name="Default suite" duration-ms="30311" started-at="2017-08-07T15:35:11Z" finished-at="2017-08-07T15:35:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22710" started-at="2017-05-30T16:49:12Z" finished-at="2017-05-30T16:49:34Z">
-      <class name="firstTestNG.NewTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="setup" is-config="true" duration-ms="10199" started-at="2017-05-30T19:49:12Z" finished-at="2017-05-30T19:49:22Z">
+    <test name="Default test" duration-ms="30311" started-at="2017-08-07T15:35:11Z" finished-at="2017-08-07T15:35:41Z">
+      <class name="firstTestNG.saveDraft">
+        <test-method status="PASS" signature="setup()[pri:0, instance:firstTestNG.saveDraft@3159c4b8]" name="setup" is-config="true" duration-ms="10374" started-at="2017-08-07T18:35:11Z" finished-at="2017-08-07T18:35:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="verifyHomepageTitle" duration-ms="31" started-at="2017-05-30T19:49:22Z" finished-at="2017-05-30T19:49:22Z">
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:firstTestNG.saveDraft@3159c4b8]" name="verifyHomepageTitle" duration-ms="33" started-at="2017-08-07T18:35:21Z" finished-at="2017-08-07T18:35:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
-        <test-method status="PASS" signature="login()[pri:1, instance:firstTestNG.NewTest@4b952a2d]" name="login" duration-ms="10407" started-at="2017-05-30T19:49:22Z" finished-at="2017-05-30T19:49:32Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:firstTestNG.saveDraft@3159c4b8]" name="login" duration-ms="12832" started-at="2017-08-07T18:35:21Z" finished-at="2017-08-07T18:35:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logout()[pri:2, instance:firstTestNG.NewTest@4b952a2d]" name="logout" duration-ms="1886" started-at="2017-05-30T19:49:32Z" finished-at="2017-05-30T19:49:34Z">
+        <test-method status="PASS" signature="logout()[pri:2, instance:firstTestNG.saveDraft@3159c4b8]" name="logout" duration-ms="4" started-at="2017-08-07T18:35:34Z" finished-at="2017-08-07T18:35:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:firstTestNG.NewTest@4b952a2d]" name="close" is-config="true" duration-ms="133" started-at="2017-05-30T19:49:34Z" finished-at="2017-05-30T19:49:34Z">
+        <test-method status="PASS" signature="quickpress()[pri:2, instance:firstTestNG.saveDraft@3159c4b8]" name="quickpress" duration-ms="6820" started-at="2017-08-07T18:35:34Z" finished-at="2017-08-07T18:35:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quickpress -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:firstTestNG.saveDraft@3159c4b8]" name="logout" is-config="true" duration-ms="0" started-at="2017-08-07T18:35:41Z" finished-at="2017-08-07T18:35:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="close()[pri:0, instance:firstTestNG.saveDraft@3159c4b8]" name="close" is-config="true" duration-ms="193" started-at="2017-08-07T18:35:41Z" depends-on-methods="firstTestNG.saveDraft.logout" finished-at="2017-08-07T18:35:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- firstTestNG.NewTest -->
+      </class> <!-- firstTestNG.saveDraft -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
